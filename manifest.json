@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "version": "0.0.1",
+    "name": "CHAT",
+    "description": "Extensão CHAT",
+    "author": "LEAL",
+	"permissions": [
+		"webRequest",
+		"<all_urls>",
+		"storage",
+        "tts"
+
+	],
+	"background": {
+	  "scripts": ["novamensagem.js"],
+	  "persistent": true
+	},
+    "browser_action": {
+        "default_title": "CHAT",
+        "default_popup": "index.html",
+        "default_icon": "icon.png"
+    }
+
+
+}
